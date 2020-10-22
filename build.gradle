@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+group = "maow"
+archivesBaseName = "modloader"
+version = "1.0.0"
+
+repositories {
+    mavenCentral()
+    maven { url = "https://jitpack.io" }
+}
+
+dependencies {
+    implementation "com.google.code.gson:gson:2.8.6"
+    implementation("com.github.maowcraft.common:common-reflect:1.0.0") {
+        exclude group: "org.fusesource.jansi"
+    }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Test Mod",
+  "id": "testmod",
+  "version": "1.0.0",
+  "description": "A test mod for Modloader",
+  "author": "Maow",
+  "entrypoints": [
+    "maow.testmod.Main"
+  ]
+}
